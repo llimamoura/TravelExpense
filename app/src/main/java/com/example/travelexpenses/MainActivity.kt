@@ -1,6 +1,7 @@
 package com.example.travelexpenses
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,15 +21,28 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.buttonCalcule.setOnClickListener{
+        binding.buttonCalcule.setOnClickListener {
             calc()
         }
     }
+
+    private fun isValid(): Boolean {
+        return (binding.editTextDistance.text.toString() != ""
+                && binding.editTextPrice.text.toString() != ""
+                && binding.editTextAutonomy.text.toString() != ""
+                && binding.editTextAutonomy.text.toString().toFloat() != 0f)
+    }
+
     private fun calc() {
-        val distance = binding.editTextDistance.text.toString().toFloat()
-        val price = binding.editTextPrice.text.toString().toFloat()
-        val autonomy = binding.editTextAutonomy.text.toString().toFloat()
-        val result = (distance * price) / autonomy
-        binding.textResultTotal.text = "R$ ${"%.2f".format(result)}"
+        if (isValid()) {
+            val distance = binding.editTextDistance.text.toString().toFloat()
+            val price = binding.editTextPrice.text.toString().toFloat()
+            val autonomy = binding.editTextAutonomy.text.toString().toFloat()
+            val result = (distance * price) / autonomy
+            binding.textResultTotal.text = "R$ ${"%.2f".format(result)}"
+        } else {
+            Toast.makeText(this, getString(R.string.toastMessage), Toast.LENGTH_SHORT).show()
+        }
+
     }
 }
