@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/distancia"
+        android:hint="@string/editTextDistance"
         android:importantForAutofill="no"
         android:inputType="number"
         android:minHeight="48dp"
@@ -40,7 +40,7 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/total_de_quilometros"
+        android:text="@string/textTotalKm"
         android:textSize="20sp"
         />
 
@@ -49,7 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/pre_o"
+        android:hint="@string/textPrice"
         android:importantForAutofill="no"
         android:inputType="number"
         android:minHeight="48dp"
@@ -60,7 +60,7 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/pre_o_por_litro"
+        android:text="@string/textPriceLiter"
         android:textSize="20sp"
         />
 
@@ -69,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/autonomia"
+        android:hint="@string/editTextAutonomy"
         android:importantForAutofill="no"
         android:inputType="number"
         android:minHeight="48dp"
@@ -80,7 +80,7 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/kms_por_litro"
+        android:text="@string/textKMsPerLiter"
         android:textSize="20sp"
         />
 
@@ -89,7 +89,7 @@
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/seu_gasto_total_ser_de"
+        android:text="@string/totalText"
         android:textSize="26sp"
         android:layout_marginVertical="14dp"
         />
@@ -99,7 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/r_0"
+        android:text="@string/result"
         android:textSize="36sp"
         android:textColor="@color/ligthBlue"/>
 
@@ -109,6 +109,6 @@
         android:layout_height="70dp"
         android:layout_marginTop="22dp"
         android:layout_gravity="center"
-        android:text="@string/calcular_gasto"
+        android:text="@string/calculateExpenses"
         android:textSize="22sp"/>
 </LinearLayout>

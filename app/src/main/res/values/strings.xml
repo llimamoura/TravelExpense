@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">travelExpenses</string>
-    <string name="distancia">Distancia</string>
-    <string name="total_de_quilometros">Total de quilometros</string>
-    <string name="pre_o_por_litro">Preço por litro</string>
-    <string name="pre_o">preço</string>
-    <string name="autonomia">Autonomia</string>
-    <string name="kms_por_litro">KMs por litro</string>
-    <string name="seu_gasto_total_ser_de">Seu gasto total será de:</string>
-    <string name="r_0">R$0</string>
-    <string name="calcular_gasto">Calcular Gasto</string>
+    <string name="editTextDistance">Distancia</string>
+    <string name="textTotalKm">Total de quilometros</string>
+    <string name="textPriceLiter">Preço por litro</string>
+    <string name="textPrice">preço</string>
+    <string name="editTextAutonomy">Autonomia</string>
+    <string name="textKMsPerLiter">KMs por litro</string>
+    <string name="totalText">Seu gasto total será de:</string>
+    <string name="result">R$0</string>
+    <string name="calculateExpenses">Calcular Gasto</string>
+    <string name="toastMessage">Preencha todos os campos</string>
 </resources>
