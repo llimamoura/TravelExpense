@@ -9,5 +9,5 @@
     <string name="totalText">Seu gasto total será de:</string>
     <string name="result">R$0</string>
     <string name="calculateExpenses">Calcular Gasto</string>
-    <string name="toastMessage">Preencha todos os campos</string>
+    <string name="toastMessage">Preencha todos os campos corretamente</string>
 </resources>
