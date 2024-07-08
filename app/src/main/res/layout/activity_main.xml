@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Custo de Viagem"
+        android:textColor="@color/white"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+
+    <EditText
+        android:id="@+id/editTextDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/distancia"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/textTotalKm"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/total_de_quilometros"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/pre_o"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/textPriceLiter"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pre_o_por_litro"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/editTextAutonomy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/autonomia"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/textKMsPerLiter"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kms_por_litro"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seu_gasto_total_ser_de"
+        android:textSize="26sp"
+        android:layout_marginVertical="14dp"
+        />
+
+    <TextView
+        android:id="@+id/textResultTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/r_0"
+        android:textSize="36sp"
+        android:textColor="@color/ligthBlue"/>
+
+    <Button
+        android:id="@+id/buttonCalcule"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="22dp"
+        android:layout_gravity="center"
+        android:text="@string/calcular_gasto"
+        android:textSize="22sp"/>
+</LinearLayout>
